@@ -85,106 +85,79 @@
   </section>
 
   <!-- Navbar -->
-  <nav class="fixed w-full top-0 left-0 z-50 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 bg-opacity-95 shadow-2xl backdrop-blur-lg border-b border-blue-700/30">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 relative">
-      <!-- Brand/Logo -->
+  <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-opacity-95 shadow-2xl z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <!-- Logo/Brand -->
       <a href="#home" class="flex items-center space-x-3 group">
-        <span class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-700 rounded-full shadow-xl ring-4 ring-blue-400/40 group-hover:scale-110 transition-transform duration-200">
-          <img src="images/WhatsApp Image 2025-07-08 at 6.15.01 PM.jpeg" alt="Logo" class="w-12 h-12 rounded-full" />
-        </span>
-        <span class="ml-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-200 tracking-wide drop-shadow-lg">Vignesh T</span>
+        <img src="images/WhatsApp Image 2025-07-08 at 6.15.01 PM.jpeg" alt="Logo" class="w-11 h-11 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-200" />
+        <span class="text-2xl font-extrabold text-blue-400 tracking-wide group-hover:drop-shadow-lg">Vignesh T</span>
       </a>
-      <!-- Hamburger (Mobile) -->
-      <button id="nav-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none group">
-        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 mb-1 rounded transition-all duration-300"></span>
-        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 mb-1 rounded transition-all duration-300"></span>
-        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 rounded transition-all duration-300"></span>
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex space-x-8 text-lg font-semibold">
+        <li>
+          <a href="#home" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded">Home</a>
+        </li>
+        <li>
+          <a href="#projects" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded">Contact</a>
+        </li>
+        <li>
+          <a href="https://github.com/VIGNESH-T2005" target="_blank" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded flex items-center gap-1">
+            <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded flex items-center gap-1">
+            <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.37-1.54 2.82-1.54 3.02 0 3.58 1.99 3.58 4.58v4.73z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_vicky.x11?igsh=cHQ1bzZhdWw5eGhy" target="_blank" class="relative text-gray-200 hover:text-blue-400 transition after:block after:h-0.5 after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left after:rounded flex items-center gap-1">
+            <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm0 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.75-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+            Instagram
+          </a>
+      <button id="mobile-nav-toggle" class="md:hidden flex flex-col justify-center items-center w-11 h-11 rounded-full bg-blue-400/10 hover:bg-blue-400/20 focus:outline-none transition">
+        <span class="block w-7 h-1 bg-blue-400 mb-1 rounded transition-all"></span>
+        <span class="block w-7 h-1 bg-blue-400 mb-1 rounded transition-all"></span>
+        <span class="block w-7 h-1 bg-blue-400 rounded transition-all"></span>
       </button>
-      <!-- Nav Links -->
-      <ul id="nav-menu" class="hidden md:flex space-x-8 lg:space-x-14 items-center text-lg font-semibold">
-        <li class="relative group">
-          <a href="#home" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition">
-            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"></path></svg>
-            Home
-          </a>
-          <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-        </li>
-        <li class="relative group"></li>
-          <a href="#projects" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition">
-            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 17v-2a4 4 0 018 0v2M5 10a4 4 0 018 0v2m-4 4h4"></path></svg>
-            Projects
-          </a>
-          <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-        </li>
-        <!-- Contact Dropdown -->
-        <li class="relative group">
-          <button id="contactDropdownBtn" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition focus:outline-none">
-            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M15 9l-6 6M9 9l6 6"></path></svg>
-            Contact
-            <svg class="w-4 h-4 ml-1 text-blue-300 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
-          </button>
-          <!-- Contact Dropdown Menu (Segmented) -->
-          <div id="contactDropdownMenu" class="absolute left-0 mt-3 min-w-[220px] bg-gray-900 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 px-4 py-3 flex flex-col space-y-3">
-            <!-- Contact Segment -->
-            <div>
-              <div class="text-xs uppercase tracking-wider text-blue-400 mb-2 font-semibold">Contact</div>
-              <a href="#contact" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
-                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M15 9l-6 6M9 9l6 6"></path></svg>
-                <span>Form</span>
-              </a>
-              <a href="mailto:vigneshhari8739@gmail.com" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
-                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 12H8m8 0a4 4 0 11-8 0 4 4 0 018 0zm0 0v4a4 4 0 01-8 0v-4"></path></svg>
-                <span>Email</span>
-              </a>
-              <a href="tel:+919361934191" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
-                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm12-12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
-                <span>Phone</span>
-              </a>
-            </div>
-            <div class="border-t border-blue-700/30 my-2"></div>
-            <!-- Social Segment -->
-            <div>
-              <div class="text-xs uppercase tracking-wider text-blue-400 mb-2 font-semibold">Social</div>
-              <a href="https://github.com/VIGNESH-T2005" target="_blank" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
-                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 012.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
-                <span>GitHub</span>
-              </a>
-              <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
-                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.37-1.56 2.82-1.56 3.02 0 3.58 1.99 3.58 4.58v4.75z"/></svg>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <!-- Call to Action Button -->
-      <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-300 text-white font-bold px-7 py-2 rounded-full shadow-xl hover:scale-110 hover:from-blue-500 hover:to-cyan-500 transition-transform duration-200 border-2 border-white/10">Let's Talk</a>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 text-2xl font-bold text-white opacity-0 pointer-events-none transition-all duration-300">
-        <a href="#home" class="hover:text-cyan-400 transition">Home</a>
-        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
-        <a href="https://github.com/VIGNESH-T2005" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
-        <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="hover:text-cyan-400 transition">LinkedIn</a>
-        <a href="#contact" class="bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-300 px-6 py-2 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 border-2 border-white/10">Let's Talk</a>
-      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-nav-menu" class="md:hidden fixed inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 bg-opacity-95 flex flex-col items-center justify-center space-y-10 text-3xl font-bold text-white opacity-0 pointer-events-none transition-all duration-300 z-40">
+      <a href="#home" class="hover:text-blue-400 transition">Home</a>
+      <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+      <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      <a href="https://github.com/VIGNESH-T2005" target="_blank" class="hover:text-blue-400 transition flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 012.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="hover:text-blue-400 transition flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.37-1.54 2.82-1.54 3.02 0 3.58 1.99 3.58 4.58v4.73z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/_vicky.x11?igsh=cHQ1bzZhdWw5eGhy" target="_blank" class="hover:text-blue-400 transition flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.203 0 3.584.012 4.85.07 1.267.058 2.15.27 2.65.57a5.35 5.35 0 011.95 1.95c.3.5.512 1.383.57 2.65.058 1.266.07 1.647.07 4.85s-.012 3.584-.07 4.85c-.058 1.267-.27 2.15-.57 2.65a5.35 5.35 0 01-1.95 1.95c-.5.3-1.383.512-2.65.57-1.266.058-1.647.07-4.85.07s-3.584-.012-4.85-.07c-1.267-.058-2.15-.27-2.65-.57a5.35 5.35 0 01-1.95-1.95c-.3-.5-.512-1.383-.57-2.65C2.175 15 .163 14 .163 12s2 .012 4 .07c1 .058 1 .27 1 .57v4c0 .3-.012 .5-.07 .7a5 5 0 01-1 .7c-.3-.3-.7-.7-1-.7H4c0 .3-.012 .5-.07 .7a5 5 0 01-1 .7c-.3-.3-.7-.7-1-.7H2v4h4v-4h4v4h4v-4h4v4h4v-4h-4v4h-4v-4h4v4h4v-4h-4v4"/></svg>
+        Instagram
+      </a>
     </div>
     <script>
-      // Dropdown open/close for click (for accessibility & mobile)
+      // Simple mobile nav toggle
       document.addEventListener('DOMContentLoaded', function () {
-        const btn = document.getElementById('contactDropdownBtn');
-        const menu = document.getElementById('contactDropdownMenu');
-        if (btn && menu) {
-          btn.addEventListener('click', function (e) {
+        const toggle = document.getElementById('mobile-nav-toggle');
+        const menu = document.getElementById('mobile-nav-menu');
+        if (toggle && menu) {
+          toggle.addEventListener('click', function (e) {
             e.stopPropagation();
             menu.classList.toggle('opacity-0');
-            menu.classList.toggle('invisible');
+            menu.classList.toggle('pointer-events-none');
           });
-          document.addEventListener('click', function (e) {
-            if (!menu.classList.contains('opacity-0')) {
-              menu.classList.add('opacity-0');
-              menu.classList.add('invisible');
-            }
+          document.addEventListener('click', function () {
+            menu.classList.add('opacity-0');
+            menu.classList.add('pointer-events-none');
           });
           menu.addEventListener('click', function (e) {
             e.stopPropagation();
@@ -201,30 +174,51 @@
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 
       <!-- Project Cards -->
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
-        <img src="images/Annotation 2025-07-08 182607.png" alt="Ecommerce" class="w-full h-48 object-cover">
+      <!-- Project Card 1 -->
+      <div class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:shadow-blue-500/30 transition duration-300 group">
+        <div class="relative">
+          <img src="images/Annotation 2025-07-08 182607.png" alt="Ecommerce" class="w-full h-48 object-cover group-hover:opacity-80 transition">
+          <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full shadow-lg font-semibold">Featured</span>
+        </div>
         <div class="p-6">
-          <h3 class="text-2xl font-semibold mb-2">E‑commerce Website</h3>
-          <p class="mb-4">Built with HTML, CSS & JavaScript. Features user login, product listing, cart, and checkout.</p>
-          <a href="https://github.com/VIGNESH-T2005/Responsive-landing-page-shop-zone-.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+          <h3 class="text-2xl font-bold mb-2 text-blue-300 group-hover:text-cyan-400 transition">E‑commerce Website</h3>
+          <p class="mb-4 text-gray-300">Built with <span class="font-semibold text-blue-400">HTML</span>, <span class="font-semibold text-blue-400">CSS</span> & <span class="font-semibold text-blue-400">JavaScript</span>. Features user login, product listing, cart, and checkout.</p>
+          <a href="https://github.com/VIGNESH-T2005/Responsive-landing-page-shop-zone-.git" target="_blank" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        View Page
+          </a>
         </div>
       </div>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
-        <img src="images/Annotation 2025-07-08 182939.png" alt="TicTacToe" class="w-full h-48 object-cover">
+      <!-- Project Card 2 -->
+      <div class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:shadow-blue-500/30 transition duration-300 group">
+        <div class="relative">
+          <img src="images/Annotation 2025-07-08 182939.png" alt="TicTacToe" class="w-full h-48 object-cover group-hover:opacity-80 transition">
+          <span class="absolute top-3 right-3 bg-yellow-600 text-white text-xs px-3 py-1 rounded-full shadow-lg font-semibold">Game</span>
+        </div>
         <div class="p-6">
-          <h3 class="text-2xl font-semibold mb-2">Tic Tac Toe</h3>
-          <p class="mb-4">Interactive game using JavaScript. Player-vs-player logic with win/tie detection.</p>
-          <a href="https://github.com/VIGNESH-T2005/Tic-Tac-Toe.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+          <h3 class="text-2xl font-bold mb-2 text-blue-300 group-hover:text-cyan-400 transition">Tic Tac Toe</h3>
+          <p class="mb-4 text-gray-300">Interactive game using <span class="font-semibold text-blue-400">JavaScript</span>. Player-vs-player logic with win/tie detection.</p>
+          <a href="https://github.com/VIGNESH-T2005/Tic-Tac-Toe.git" target="_blank" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        Play Now!
+          </a>
         </div>
       </div>
 
-      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
-        <img src="images/Annotation 2025-07-08 183051.png" alt="ToDoList" class="w-full h-48 object-cover">
+      <!-- Project Card 3 -->
+      <div class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 hover:shadow-blue-500/30 transition duration-300 group">
+        <div class="relative">
+          <img src="images/Annotation 2025-07-08 183051.png" alt="ToDoList" class="w-full h-48 object-cover group-hover:opacity-80 transition">
+          <span class="absolute top-3 right-3 bg-purple-600 text-white text-xs px-3 py-1 rounded-full shadow-lg font-semibold">Productivity</span>
+        </div>
         <div class="p-6">
-          <h3 class="text-2xl font-semibold mb-2">To-Do List App</h3>
-          <p class="mb-4">Task manager with add, edit, delete, and persistent storage via localStorage.</p>
-          <a href="https://github.com/VIGNESH-T2005/To-Do-List.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+          <h3 class="text-2xl font-bold mb-2 text-blue-300 group-hover:text-cyan-400 transition">To-Do List App</h3>
+          <p class="mb-4 text-gray-300">Task manager with add, edit, delete, and persistent storage via <span class="font-semibold text-blue-400">localStorage</span>.</p>
+          <a href="https://to-do-list-site.netlify.app/" target="_blank" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-cyan-500 hover:to-blue-500 text-white px-5 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-200">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        Use This
+          </a>
         </div>
       </div>
 
@@ -250,7 +244,8 @@
         <span>Email: <a href="mailto:vigneshhari8739@gmail.com" class="text-blue-400">vigneshhari8739@gmail.com</a></span> |
         <span>Phone: <a href="tel:+919361934191" class="text-blue-400">+91‑93619‑34191</a></span> |
         <span>GitHub: <a href="https://github.com/VIGNESH-T2005" class="text-blue-400">VIGNESH‑T2005</a></span> |
-        <span>LinkedIn: <a href="https://www.linkedin.com/in/vignesh-t-web-dev" class="text-blue-400">vignesh‑t‑web‑dev</a></span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/vignesh-t-web-dev" class="text-blue-400">vignesh‑t‑web‑dev</a></span> |
+        <span>Instagram: <a href="https://www.instagram.com/_vicky.x11?igsh=cHQ1bzZhdWw5eGhy" class="text-blue-400"> _vicky.x11</a></span>
       </p>
     </div>
   </section>
