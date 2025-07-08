@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh T • Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24">
+    <img src="images/WhatsApp Image 2025-07-08 at 6.15.01 PM.jpeg" alt="Profile Photo"
+      class="w-32 h-32 rounded-full shadow-lg mb-6">
+    <h1 class="text-5xl font-bold mb-2">Vignesh T</h1>
+    <p class="text-xl mb-6">Web Developer & Java Full Stack Learner</p>
+    <div class="mb-6 max-w-2xl mx-auto text-lg leading-relaxed text-gray-300 bg-gray-800 bg-opacity-60 rounded-lg p-6 shadow-lg">
+      <p class="mb-4">
+        I'm a passionate <span class="font-semibold text-blue-400 inline-block min-w-[8.5ch]">Web Developer</span> currently transitioning into <span class="font-semibold text-blue-400 inline-block min-w-[22ch]">Java Full Stack Development</span>. With a solid foundation in <span class="font-semibold text-blue-400 inline-block min-w-[19ch]">HTML, CSS, JavaScript</span>, and responsive design using <span class="font-semibold text-blue-400 inline-block min-w-[13ch]">Tailwind CSS</span>, I'm now deepening my backend skills with <span class="font-semibold text-blue-400 inline-block min-w-[38ch]">Java, Spring Boot, Spring MVC, Spring Data JPA</span>, and <span class="font-semibold text-blue-400 inline-block min-w-[8ch]">REST APIs</span>.
+      </p>
+      <p class="mb-4">
+        I enjoy building clean, user-centric web applications and am actively working on full-stack projects to apply what I learn in real time. My goal is to become a proficient full-stack developer capable of building scalable, secure, and efficient applications from end to end.
+      </p>
+      <div class="mb-4">
+        <span class="font-semibold text-blue-400">Current Tech Stack:</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6"></div>
+          <div class="flex items-start space-x-3">
+            <span class="text-blue-400 text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18V6M8 6v12M12 6v12" />
+              </svg>
+            </span>
+            <div>
+              <span class="font-semibold text-blue-300">Frontend:</span>
+              <span class="text-gray-200">HTML, CSS, JavaScript, Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-blue-400 text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </span>
+            <div>
+              <span class="font-semibold text-blue-300">Backend:</span>
+              <span class="text-gray-200">Java, Spring Boot, Spring MVC, Spring Data JPA</span>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-blue-400 text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8M12 8v8" />
+              </svg>
+            </span>
+            <div>
+              <span class="font-semibold text-blue-300">Database:</span>
+              <span class="text-gray-200">MySQL, MongoDB</span>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-blue-400 text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 018 0v2M5 10a4 4 0 018 0v2m-4 4h4" />
+              </svg>
+            </span>
+            <div>
+              <span class="font-semibold text-blue-300">Tools:</span>
+              <span class="text-gray-200">Git, IntelliJ, VS Code, Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mb-4">
+        Always eager to learn, grow, and take on new challenges. I'm open to internships, freelance projects, or entry-level full-stack developer roles.
+      </p>
+      <p>
+        <span class="font-semibold text-blue-400">Let’s connect and collaborate!</span>
+      </p>
+    </div>
+    <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full">
+      View My Work
+    </a>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="fixed w-full top-0 left-0 z-50 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 bg-opacity-95 shadow-2xl backdrop-blur-lg border-b border-blue-700/30">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 relative">
+      <!-- Brand/Logo -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <span class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-700 rounded-full shadow-xl ring-4 ring-blue-400/40 group-hover:scale-110 transition-transform duration-200">
+          <img src="images/WhatsApp Image 2025-07-08 at 6.15.01 PM.jpeg" alt="Logo" class="w-12 h-12 rounded-full" />
+        </span>
+        <span class="ml-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-200 tracking-wide drop-shadow-lg">Vignesh T</span>
+      </a>
+      <!-- Hamburger (Mobile) -->
+      <button id="nav-toggle" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none group">
+        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 mb-1 rounded transition-all duration-300"></span>
+        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 mb-1 rounded transition-all duration-300"></span>
+        <span class="block w-7 h-1 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 rounded transition-all duration-300"></span>
+      </button>
+      <!-- Nav Links -->
+      <ul id="nav-menu" class="hidden md:flex space-x-8 lg:space-x-14 items-center text-lg font-semibold">
+        <li class="relative group">
+          <a href="#home" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition">
+            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6"></path></svg>
+            Home
+          </a>
+          <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+        </li>
+        <li class="relative group"></li>
+          <a href="#projects" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition">
+            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 17v-2a4 4 0 018 0v2M5 10a4 4 0 018 0v2m-4 4h4"></path></svg>
+            Projects
+          </a>
+          <span class="absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-200 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+        </li>
+        <!-- Contact Dropdown -->
+        <li class="relative group">
+          <button id="contactDropdownBtn" class="flex items-center px-3 py-2 text-gray-100 hover:text-cyan-400 transition focus:outline-none">
+            <svg class="w-5 h-5 mr-2 text-blue-400 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M15 9l-6 6M9 9l6 6"></path></svg>
+            Contact
+            <svg class="w-4 h-4 ml-1 text-blue-300 group-hover:text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <!-- Contact Dropdown Menu (Segmented) -->
+          <div id="contactDropdownMenu" class="absolute left-0 mt-3 min-w-[220px] bg-gray-900 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 px-4 py-3 flex flex-col space-y-3">
+            <!-- Contact Segment -->
+            <div>
+              <div class="text-xs uppercase tracking-wider text-blue-400 mb-2 font-semibold">Contact</div>
+              <a href="#contact" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M15 9l-6 6M9 9l6 6"></path></svg>
+                <span>Form</span>
+              </a>
+              <a href="mailto:vigneshhari8739@gmail.com" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 12H8m8 0a4 4 0 11-8 0 4 4 0 018 0zm0 0v4a4 4 0 01-8 0v-4"></path></svg>
+                <span>Email</span>
+              </a>
+              <a href="tel:+919361934191" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm12-12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 12a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                <span>Phone</span>
+              </a>
+            </div>
+            <div class="border-t border-blue-700/30 my-2"></div>
+            <!-- Social Segment -->
+            <div>
+              <div class="text-xs uppercase tracking-wider text-blue-400 mb-2 font-semibold">Social</div>
+              <a href="https://github.com/VIGNESH-T2005" target="_blank" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
+                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 012.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="flex items-center space-x-2 text-gray-200 hover:text-cyan-400 py-1 px-2 rounded transition">
+                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.37-1.56 2.82-1.56 3.02 0 3.58 1.99 3.58 4.58v4.75z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- Call to Action Button -->
+      <a href="#contact" class="hidden md:inline-block bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-300 text-white font-bold px-7 py-2 rounded-full shadow-xl hover:scale-110 hover:from-blue-500 hover:to-cyan-500 transition-transform duration-200 border-2 border-white/10">Let's Talk</a>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden fixed inset-0 bg-black bg-opacity-80 z-40 flex flex-col items-center justify-center space-y-8 text-2xl font-bold text-white opacity-0 pointer-events-none transition-all duration-300">
+        <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+        <a href="https://github.com/VIGNESH-T2005" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
+        <a href="https://www.linkedin.com/in/vignesh-t-web-dev" target="_blank" class="hover:text-cyan-400 transition">LinkedIn</a>
+        <a href="#contact" class="bg-gradient-to-r from-cyan-500 via-blue-500 to-blue-300 px-6 py-2 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 border-2 border-white/10">Let's Talk</a>
+      </div>
+    </div>
+    <script>
+      // Dropdown open/close for click (for accessibility & mobile)
+      document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.getElementById('contactDropdownBtn');
+        const menu = document.getElementById('contactDropdownMenu');
+        if (btn && menu) {
+          btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('invisible');
+          });
+          document.addEventListener('click', function (e) {
+            if (!menu.classList.contains('opacity-0')) {
+              menu.classList.add('opacity-0');
+              menu.classList.add('invisible');
+            }
+          });
+          menu.addEventListener('click', function (e) {
+            e.stopPropagation();
+          });
+        }
+      });
+    </script>
+  </nav>
+  <div class="h-20"></div>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Project Cards -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="images/Annotation 2025-07-08 182607.png" alt="Ecommerce" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">E‑commerce Website</h3>
+          <p class="mb-4">Built with HTML, CSS & JavaScript. Features user login, product listing, cart, and checkout.</p>
+          <a href="https://github.com/VIGNESH-T2005/Responsive-landing-page-shop-zone-.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="images/Annotation 2025-07-08 182939.png" alt="TicTacToe" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Tic Tac Toe</h3>
+          <p class="mb-4">Interactive game using JavaScript. Player-vs-player logic with win/tie detection.</p>
+          <a href="https://github.com/VIGNESH-T2005/Tic-Tac-Toe.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition">
+        <img src="images/Annotation 2025-07-08 183051.png" alt="ToDoList" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">To-Do List App</h3>
+          <p class="mb-4">Task manager with add, edit, delete, and persistent storage via localStorage.</p>
+          <a href="https://github.com/VIGNESH-T2005/To-Do-List.git" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">View Code</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-gray-800">
+    <h2 class="text-4xl font-bold text-center mb-8">Get In Touch</h2>
+    <form id="contactForm" class="max-w-lg mx-auto space-y-6">
+      <input type="text" name="name" placeholder="Your Name"
+        class="w-full px-4 py-3 rounded bg-gray-700 focus:outline-none" required>
+      <input type="email" name="email" placeholder="Your Email"
+        class="w-full px-4 py-3 rounded bg-gray-700 focus:outline-none" required>
+      <textarea name="message" rows="5" placeholder="Your Message"
+        class="w-full px-4 py-3 rounded bg-gray-700 focus:outline-none" required></textarea>
+      <button type="submit"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded">Send Message</button>
+    </form>
+
+    <div class="mt-10 text-center space-y-2">
+      <p>
+        <span>Email: <a href="mailto:vigneshhari8739@gmail.com" class="text-blue-400">vigneshhari8739@gmail.com</a></span> |
+        <span>Phone: <a href="tel:+919361934191" class="text-blue-400">+91‑93619‑34191</a></span> |
+        <span>GitHub: <a href="https://github.com/VIGNESH-T2005" class="text-blue-400">VIGNESH‑T2005</a></span> |
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/vignesh-t-web-dev" class="text-blue-400">vignesh‑t‑web‑dev</a></span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6">
+    <p class="text-gray-500">© 2025 Vignesh T. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

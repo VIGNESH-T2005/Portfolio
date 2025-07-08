@@ -1,0 +1,6 @@
+body {
+  scroll-behavior: smooth;
+}
+nav ul li a {
+  transition: color 0.3s;
+}
