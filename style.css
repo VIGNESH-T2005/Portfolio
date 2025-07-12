@@ -4,3 +4,74 @@ body {
 nav ul li a {
   transition: color 0.3s;
 }
+
+ .glitter-box {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+    border: 2px solid #38bdf8;
+    box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.18), 0 1.5px 8px 0 rgba(56, 189, 248, 0.09);
+    transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s, border-color 0.3s;
+    z-index: 1;
+  }
+
+  .glitter-box:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 12px 36px 0 rgba(56, 189, 248, 0.32), 0 6px 24px 0 rgba(37, 99, 235, 0.18);
+    border-color: #2563eb;
+  }
+
+  .glitter-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: conic-gradient(from 180deg at 60% 40%, #38bdf8 0%, #2563eb 40%, transparent 70%);
+    opacity: 0.25;
+    animation: swirlGlow 3s infinite linear;
+  }
+
+  @keyframes swirlGlow {
+    0% {
+      opacity: 0.25;
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      opacity: 0.45;
+      transform: rotate(360deg) scale(1.07);
+    }
+  }
+
+  .glitter-box img {
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 2px 12px #38bdf888);
+    transition: filter 0.3s, transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+    transform: scale(1);
+  }
+
+  .glitter-box:hover img {
+    filter: drop-shadow(0 6px 24px #2563ebcc);
+    transform: scale(1.12) rotate(5deg);
+  }
+
+  .glitter-box p {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111;
+    text-shadow: 0 2px 12px #38bdf888;
+    margin-top: 0.7rem;
+    font-size: 1.15rem;
+    background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #111;
+    animation: bounceText 1.8s infinite cubic-bezier(.68,-0.55,.27,1.55);
+  }
+
+  @keyframes bounceText {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
