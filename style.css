@@ -240,7 +240,7 @@ nav ul li a {
 
 .neon-skill-box:hover {
   transform: scale(1.08) rotate(-1deg);
-  box-shadow: 0 0 24px rgba(0, 238, 255, 0.6), 0 0 32px rgba(14, 233, 233, 0.3);
+  box-shadow: 0 0 24px rgba(0, 255, 255, 0.6), 0 0 32px rgba(14, 233, 233, 0.3);
 }
 
 .neon-skill-box::after {
@@ -261,7 +261,7 @@ nav ul li a {
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
-  filter: drop-shadow(0 4px 12px #d9ff00be);
+  filter: drop-shadow(0 4px 12px #feffff);
   transition: transform 0.4s ease;
 }
 
