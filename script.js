@@ -24,3 +24,17 @@ document.getElementById("contactForm").addEventListener("submit", e => {
           });
         }
       });
+
+       const toggleBtn = document.getElementById('mobile-nav-toggle');
+  const mobileMenu = document.getElementById('mobile-nav-menu');
+  const closeBtn = document.getElementById('mobile-menu-close');
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle('opacity-0');
+    mobileMenu.classList.toggle('pointer-events-none');
+    toggleBtn.setAttribute('aria-expanded', !mobileMenu.classList.contains('opacity-0'));
+  }
+
+  toggleBtn.addEventListener('click', toggleMenu);
+  // The close button uses onclick="toggleMenu()", but you may also explicitly add:
+  // closeBtn.addEventListener('click', toggleMenu);
