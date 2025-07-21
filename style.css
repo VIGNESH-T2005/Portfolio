@@ -198,8 +198,7 @@ nav ul li a {
     50% { transform: translateY(-8px); }
   }
 
-
-.features-section {
+  .features-section {
   background: #0f172a00;
   padding: 4rem 1rem;
   text-align: center;
@@ -222,18 +221,17 @@ nav ul li a {
   gap: 2rem;
   padding: 0 2rem;
   justify-items: center;
-  justify-content: center; /* ✅ Ensures last row stays centered */
 }
 
 .neon-skill-box {
   position: relative;
   padding: 1.5rem 1rem;
   border-radius: 20px;
-  background: linear-gradient(135deg, #00ddff, #9d3bffde);
+  background: linear-gradient(135deg, #000dffab, #ffdf3eb7);
   text-align: center;
   max-width: 260px;
   min-height: 300px;
-  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4), 0 0 24px rgba(14, 165, 233, 0.2);
+  box-shadow: 0 0 12px rgba(107, 250, 255, 0.564), 0 0 24px rgba(14, 165, 233, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   overflow: hidden;
   cursor: pointer;
@@ -241,7 +239,7 @@ nav ul li a {
 
 .neon-skill-box:hover {
   transform: scale(1.08) rotate(-1deg);
-  box-shadow: 0 0 24px rgba(0, 255, 255, 0.6), 0 0 32px rgba(14, 233, 233, 0.3);
+  box-shadow: 0 0 24px rgba(0, 255, 255, 0.6), 0 0 32px rgba(0, 255, 255, 0.3);
 }
 
 .neon-skill-box::after {
@@ -302,18 +300,4 @@ nav ul li a {
 @keyframes bounceText {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
-}
-
-/* ✅ Mobile responsiveness */
-@media (max-width: 600px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    gap: 1.5rem;
-  }
-
-  .neon-skill-box {
-    max-width: 90%;
-    min-height: auto;
-  }
 }

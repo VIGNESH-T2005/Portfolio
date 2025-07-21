@@ -25,16 +25,29 @@ document.getElementById("contactForm").addEventListener("submit", e => {
         }
       });
 
-       const toggleBtn = document.getElementById('mobile-nav-toggle');
-  const mobileMenu = document.getElementById('mobile-nav-menu');
-  const closeBtn = document.getElementById('mobile-menu-close');
+  const menu = document.getElementById('mobile-nav-menu');
+  const backdrop = document.getElementById('mobile-backdrop');
+  const menuToggleBtn = document.getElementById('mobile-nav-toggle');
+  const menuCloseBtn = document.getElementById('mobile-menu-close');
 
-  function toggleMenu() {
-    mobileMenu.classList.toggle('opacity-0');
-    mobileMenu.classList.toggle('pointer-events-none');
-    toggleBtn.setAttribute('aria-expanded', !mobileMenu.classList.contains('opacity-0'));
+  function openMobileMenu() {
+    menu.classList.remove('-translate-x-full', 'opacity-0', 'pointer-events-none');
+    menu.classList.add('translate-x-0', 'opacity-100');
+    backdrop.classList.remove('opacity-0', 'pointer-events-none');
+    backdrop.classList.add('opacity-100');
+    document.body.style.overflow = 'hidden'; // prevent background scroll
   }
 
-  toggleBtn.addEventListener('click', toggleMenu);
-  // The close button uses onclick="toggleMenu()", but you may also explicitly add:
-  // closeBtn.addEventListener('click', toggleMenu);
+  function closeMobileMenu() {
+    menu.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
+    menu.classList.remove('translate-x-0', 'opacity-100');
+    backdrop.classList.add('opacity-0', 'pointer-events-none');
+    backdrop.classList.remove('opacity-100');
+    document.body.style.overflow = ''; // restore scroll
+  }
+
+  // Hamburger opens menu
+  if (menuToggleBtn) menuToggleBtn.addEventListener('click', openMobileMenu);
+  // Close button and clicking overlay close menu
+  menuCloseBtn.addEventListener('click', closeMobileMenu);
+  backdrop.addEventListener('click', closeMobileMenu);
